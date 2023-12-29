@@ -7,10 +7,23 @@
     <title>SketchPad</title>
 </head>
 <body>
-    <h1>SketchPad</h1>
-    <div class="buttons"></div>
-    <div class="grid"></div>
-    <div class="footer">footer</div>
+    <div class="container">
+        <h1>SketchPad</h1>
+        <div class="settings-buttons">
+            <input type="color">
+            <button class="color-mode">Color Mode</button>
+            <button class="rainbow-mode">Rainbow Mode</button>
+            <button class="eraser">Eraser</button>
+            <button class="clear">Clear</button>
+            <div class="grid-size-slider">
+                <label for="grid-size">16x16</label>
+                <input type="range" id="grid-size">
+            </div>
+        </div>
+        <div class="grid">grid</div>
+        <div class="footer">footer</div>
+    </div>
+    
 
 <script src="./script.js"></script>
 </body>

@@ -1,0 +1,9 @@
+.settings-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-size-slider {
+    display: flex;
+    flex-direction: column;
+}
