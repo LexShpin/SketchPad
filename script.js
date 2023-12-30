@@ -80,22 +80,43 @@ gridSizeSlider.addEventListener('input', e => {
     generateGrid(e.target.value)
 })
 
+const activateColorModeBtn = () => {
+    colorModeBtn.classList.add('active')
+    rainbowModeBtn.classList.remove('active')
+    eraserBtn.classList.remove('active')
+}
+
+const activateRainbowModeBtn = () => {
+    colorModeBtn.classList.remove('active')
+    rainbowModeBtn.classList.add('active')
+    eraserBtn.classList.remove('active')
+}
+
+const activateEraserBtn = () => {
+    colorModeBtn.classList.remove('active')
+    rainbowModeBtn.classList.remove('active')
+    eraserBtn.classList.add('active')
+}
+
 colorModeBtn.addEventListener('click', e => {
     isColorMode = true
     isRainbowMode = false
     isEraserMode = false
+    activateColorModeBtn()
 })
 
 rainbowModeBtn.addEventListener('click', e => {
     isColorMode = false
     isRainbowMode = true
     isEraserMode = false
+    activateRainbowModeBtn()
 })
 
 eraserBtn.addEventListener('click', e => {
     isColorMode = false
     isRainbowMode = false
     isEraserMode = true
+    activateEraserBtn()
 })
 
 clearBtn.addEventListener('click', e => {

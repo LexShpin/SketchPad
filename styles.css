@@ -16,6 +16,7 @@ h1 {
     justify-content: center;
     font-family: 'Minecraft';
     color: #FFE81F;
+    margin-top: 1rem;
 }
 
 button {
@@ -31,7 +32,19 @@ button {
 
 .settings-buttons button {
     padding: 1rem;
+    border: none;
     border-radius: 5%;
+    background-color: #FFE81F;
+    color: black;
+    font-family: 'Minecraft';
+    font-size: 1rem;
+}
+
+#color-input {
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
 }
 
 .grid-size-slider {
@@ -49,6 +62,7 @@ button {
 .content {
     display: flex;
     justify-content: space-between;
+    width: 90%;
 }
 
 .grid {
@@ -67,4 +81,12 @@ button {
 .footer {
     display: flex;
     justify-content: center;
+    font-family: 'Minecraft';
+    color: #FFE81F;
+    margin-bottom: 1rem;
+}
+
+.active {
+    transform: scale(1.05);
+    border: 5px solid #ffff !important;
 }
