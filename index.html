@@ -11,20 +11,19 @@
         <h1>SketchPad</h1>
         <div class="content">
             <div class="settings-buttons">
-                <input type="color" id="color-input">
-                <button class="color-mode">Color Mode</button>
-                <button class="rainbow-mode">Rainbow Mode</button>
-                <button class="eraser">Eraser</button>
-                <button class="clear">Clear</button>
+                <input type="color" id="color-input" value="#A13A3A">
+                <button class="color-mode-btn">Color Mode</button>
+                <button class="rainbow-mode-btn">Rainbow Mode</button>
+                <button class="eraser-btn">Eraser</button>
+                <button class="clear-btn">Clear</button>
                 <div class="grid-size-slider">
-                    <label for="grid-size">16x16</label>
-                    <input type="range" id="grid-size">
+                    <label for="grid-size" class="grid-size-slider-label">16x16</label>
+                    <input type="range" id="grid-size" min="1" max="50" step=1>
                 </div>
             </div>
             <div class="grid"></div>
-            <div class="placeholder"></div>
         </div>    
-        <div class="footer">footer</div>
+        <div class="footer">Copyright Alexander Shpin 2024</div>
     </div>
     
 

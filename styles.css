@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('./fonts/Minecraft.ttf');
+}
+
 * {
     box-sizing: border-box;
     background-color: black;
@@ -6,9 +11,27 @@
     margin: 0;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Minecraft';
+    color: #FFE81F;
+}
+
+button {
+    cursor: pointer;
+}
+
 .settings-buttons {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.settings-buttons button {
+    padding: 1rem;
+    border-radius: 5%;
 }
 
 .grid-size-slider {
@@ -19,6 +42,8 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .content {
@@ -32,8 +57,14 @@
     width: 500px;
     height: 500px;
     border: 1px solid #ffff;
+    margin: 0 auto;
 }
 
 .grid__item {
     border: 1px solid #ffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }
